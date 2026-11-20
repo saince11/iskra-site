@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Автосервис «Искра» — ремонт авто в Кокшетау</title>
+<meta name="description" content="Автосервис Искра в Кокшетау: диагностика, ремонт ходовой, замена масла, шиномонтаж. Запись по телефону +7 (705) 113-71-41.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',Arial,sans-serif; color:#222; background:#fff; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:14px 6%; position:sticky; top:0; background:#111827; z-index:10; }
+  .logo { font-size:24px; font-weight:800; color:#f97316; }
+  .logo span { color:#fff; font-weight:500; font-size:14px; display:block; }
+  nav a { margin-left:18px; text-decoration:none; color:#e5e7eb; font-size:15px; }
+  nav a:hover { color:#f97316; }
+  .hero { background:linear-gradient(135deg,#111827,#1f2937); color:#fff; text-align:center; padding:90px 6% 70px; }
+  .hero .tag { display:inline-block; background:#f97316; color:#111; font-weight:700; padding:6px 18px; border-radius:20px; font-size:14px; margin-bottom:20px; }
+  .hero h1 { font-size:40px; margin-bottom:16px; }
+  .hero p { font-size:19px; opacity:.85; max-width:640px; margin:0 auto 30px; }
+  .btn { display:inline-block; background:#f97316; color:#fff; padding:15px 36px; border-radius:30px; text-decoration:none; font-weight:700; font-size:17px; margin:5px; }
+  .btn.ghost { background:transparent; border:2px solid #f97316; }
+  section { padding:60px 6%; max-width:1100px; margin:0 auto; }
+  h2 { text-align:center; font-size:30px; margin-bottom:36px; color:#111827; }
+  h2::after { content:""; display:block; width:60px; height:4px; background:#f97316; margin:14px auto 0; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .card { border:1px solid #e5e7eb; border-radius:14px; padding:26px; transition:.2s; }
+  .card:hover { box-shadow:0 8px 24px rgba(0,0,0,.1); transform:translateY(-3px); border-color:#f97316; }
+  .card .icon { font-size:36px; }
+  .card h3 { margin:12px 0 8px; }
+  .card p { color:#6b7280; font-size:15px; }
+  .card .price { font-size:20px; font-weight:700; color:#f97316; margin-top:12px; }
+  .why { background:#f9fafb; max-width:none; }
+  .why .inner { max-width:1100px; margin:0 auto; }
+  .why ul { list-style:none; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+  .why li { background:#fff; border-radius:12px; padding:20px 22px; font-size:16px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+  .why li b { color:#111827; }
+  .steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; counter-reset:step; }
+  .step { text-align:center; }
+  .step .num { width:56px; height:56px; border-radius:50%; background:#111827; color:#f97316; font-size:24px; font-weight:800; display:flex; align-items:center; justify-content:center; margin:0 auto 14px; }
+  .contact { background:#111827; color:#fff; max-width:none; }
+  .contact .inner { max-width:1100px; margin:0 auto; }
+  .contact h2 { color:#fff; }
+  .contact .box { display:flex; flex-wrap:wrap; gap:24px; justify-content:center; font-size:18px; }
+  .contact .box div { background:#1f2937; padding:18px 26px; border-radius:12px; }
+  footer { background:#0b1120; color:#9ca3af; text-align:center; padding:22px; font-size:14px; }
+  @media(max-width:640px){ .hero h1{font-size:27px} nav{display:none} }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">АВТОСЕРВИС «ИСКРА»<span>г. Кокшетау</span></div>
+  <nav>
+    <a href="#uslugi">Услуги</a>
+    <a href="#why">Почему мы</a>
+    <a href="#zapis">Запись</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="tag">ВАШ АВТОМОБИЛЬ В НАДЁЖНЫХ РУКАХ</div>
+  <h1>Ремонт и обслуживание авто в Кокшетау</h1>
+  <p>Диагностика, ремонт ходовой, замена масла, тормозов и шиномонтаж. Честные цены, гарантия на работы, запись в день обращения.</p>
+  <a class="btn" href="tel:+77051137141">📞 +7 (705) 113-71-41</a>
+  <a class="btn ghost" href="https://wa.me/77051137141">Написать в WhatsApp</a>
+</div>
+
+<section id="uslugi">
+  <h2>Наши услуги</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🔧</div><h3>Диагностика</h3><p>Компьютерная и полная диагностика всех систем автомобиля</p><div class="price">от 3 000 ₸</div></div>
+    <div class="card"><div class="icon">🛞</div><h3>Ремонт ходовой</h3><p>Шаровые, стойки, рычаги, сайлентблоки — быстро и с гарантией</p><div class="price">от 5 000 ₸</div></div>
+    <div class="card"><div class="icon">🛢️</div><h3>Замена масла</h3><p>Масло ДВС и КПП, фильтры — с любыми запчастями</p><div class="price">от 4 000 ₸</div></div>
+    <div class="card"><div class="icon">🚗</div><h3>Тормозная система</h3><p>Колодки, диски, тормозная жидкость, прокачка</p><div class="price">от 6 000 ₸</div></div>
+    <div class="card"><div class="icon">⚡</div><h3>Электрика</h3><p>АКБ, генератор, стартер, проводка, подключение сигнализаций</p><div class="price">от 3 000 ₸</div></div>
+    <div class="card"><div class="icon">❄️</div><h3>Кондиционер</h3><p>Заправка, чистка и ремонт системы кондиционирования</p><div class="price">от 8 000 ₸</div></div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="inner">
+    <h2>Почему выбирают «Искру»</h2>
+    <ul>
+      <li><b>✅ Гарантия на работы</b><br>Предоставляем гарантию на все виды ремонта</li>
+      <li><b>✅ Честные цены</b><br>Смета согласуется до начала работ — без скрытых доплат</li>
+      <li><b>✅ Запчасти в наличии</b><br>Сотрудничаем с поставщиками, ждать неделями не придётся</li>
+      <li><b>✅ Быстрое обслуживание</b><br>Большинство работ выполняем в день обращения</li>
+      <li><b>✅ Опытные мастера</b><br>Ремонтируем автомобили всех марок и годов</li>
+      <li><b>✅ Удобная запись</b><br>По телефону или WhatsApp — без очередей</li>
+    </ul>
+  </div>
+</section>
+
+<section id="zapis">
+  <h2>Как записаться</h2>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><b>Позвоните или напишите</b><br><br>Расскажите, что случилось с авто</div>
+    <div class="step"><div class="num">2</div><b>Согласуем время</b><br><br>Подберём удобный для вас слот</div>
+    <div class="step"><div class="num">3</div><b>Диагностика и смета</b><br><br>Назовём точную стоимость до работ</div>
+    <div class="step"><div class="num">4</div><b>Ремонт и гарантия</b><br><br>Забирайте авто с гарантийным талоном</div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="inner">
+    <h2>Контакты</h2>
+    <div class="box">
+      <div>📍 г. Кокшетау, ул. Акан Серы, 206</div>
+      <div>📞 <a href="tel:+77051137141" style="color:#f97316; text-decoration:none;">+7 (705) 113-71-41</a></div>
+      <div>💬 <a href="https://wa.me/77051137141" style="color:#f97316; text-decoration:none;">WhatsApp</a></div>
+      <div>🕒 Пн–Сб: 09:00 – 19:00</div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Автосервис «Искра» • Кокшетау<br>Все цены окончательно уточняются при диагностике</footer>
+</body>
+</html>
