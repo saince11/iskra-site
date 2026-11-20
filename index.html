@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Автосервис «Искра» — ремонт авто в Кокшетау</title>
+<meta name="description" content="Автосервис Искра в Кокшетау: диагностика, ремонт ходовой, замена масла, шиномонтаж. Запись по телефону +7 (705) 113-71-41.">
+<meta name="theme-color" content="#111827">
+
+<!-- Favicon (встроенный, отдельный файл не нужен) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111827'/%3E%3Cpath d='M36 6 16 36h14l-4 22 22-32H34z' fill='%23f97316'/%3E%3C/svg%3E">
+
+<!-- Open Graph: превью при отправке ссылки в WhatsApp/Telegram/соцсетях -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Автосервис «Искра»">
+<meta property="og:title" content="Автосервис «Искра» — ремонт авто в Кокшетау">
+<meta property="og:description" content="Диагностика, ремонт ходовой, замена масла, тормоза, электрика, кондиционер. Смета до начала работ, гарантия. Запись: +7 (705) 113-71-41.">
+<!-- TODO: когда сайт будет на домене, добавить:
+<meta property="og:url" content="https://ВАШ-ДОМЕН/">
+<meta property="og:image" content="https://ВАШ-ДОМЕН/photos/og.jpg">  (картинка 1200×630)
+<link rel="canonical" href="https://ВАШ-ДОМЕН/"> -->
+
+<!-- Микроразметка для поисковиков -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Автосервис «Искра»",
+  "telephone": "+77051137141",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Акан Серы, 206",
+    "addressLocality": "Кокшетау",
+    "addressCountry": "KZ"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  }],
+  "priceRange": "₸₸"
+}
+</script>
+
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Segoe UI',Arial,sans-serif; color:#222; background:#fff; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:14px 6%; position:sticky; top:0; background:#111827; z-index:10; }
+  .logo { font-size:24px; font-weight:800; color:#f97316; }
+  .logo span { color:#fff; font-weight:500; font-size:14px; display:block; }
+  nav a { margin-left:18px; text-decoration:none; color:#e5e7eb; font-size:15px; }
+  nav a:hover { color:#f97316; }
+  .hero { background:linear-gradient(135deg,#111827,#1f2937); color:#fff; text-align:center; padding:90px 6% 70px; }
+  .hero .tag { display:inline-block; background:#f97316; color:#111; font-weight:700; padding:6px 18px; border-radius:20px; font-size:14px; margin-bottom:20px; }
+  .hero h1 { font-size:40px; margin-bottom:16px; }
+  .hero p { font-size:19px; opacity:.85; max-width:640px; margin:0 auto 30px; }
+  .btn { display:inline-block; background:#f97316; color:#fff; padding:15px 36px; border-radius:30px; text-decoration:none; font-weight:700; font-size:17px; margin:5px; border:2px solid #f97316; cursor:pointer; font-family:inherit; }
+  .btn.ghost { background:transparent; }
+  .btn.dark { background:#111827; border-color:#111827; }
+  section { padding:60px 6%; max-width:1100px; margin:0 auto; }
+  h2 { text-align:center; font-size:30px; margin-bottom:36px; color:#111827; }
+  h2::after { content:""; display:block; width:60px; height:4px; background:#f97316; margin:14px auto 0; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .card { border:1px solid #e5e7eb; border-radius:14px; padding:26px; transition:.2s; }
+  .card:hover { box-shadow:0 8px 24px rgba(0,0,0,.1); transform:translateY(-3px); border-color:#f97316; }
+  .card .icon { font-size:36px; }
+  .card h3 { margin:12px 0 8px; }
+  .card p { color:#6b7280; font-size:15px; }
+  .card .price { font-size:20px; font-weight:700; color:#f97316; margin-top:12px; }
+  .why { background:#f9fafb; max-width:none; }
+  .why .inner, .alt .inner { max-width:1100px; margin:0 auto; }
+  .why ul { list-style:none; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+  .why li { background:#fff; border-radius:12px; padding:20px 22px; font-size:16px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+  .why li b { color:#111827; }
+  .alt { background:#f9fafb; max-width:none; }
+
+  /* Галерея */
+  .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+  .ph { position:relative; aspect-ratio:4/3; border-radius:14px; overflow:hidden; background:#e5e7eb; display:flex; align-items:center; justify-content:center; text-align:center; padding:16px; color:#6b7280; font-size:14px; border:2px dashed #cbd5e1; }
+  .ph img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .ph:has(img) { border:none; }
+  .note { text-align:center; color:#6b7280; font-size:14px; margin-top:16px; }
+
+  /* Отзывы */
+  .reviews { text-align:center; }
+  .reviews p { max-width:600px; margin:0 auto 22px; color:#4b5563; font-size:17px; }
+  .reviews-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; margin-bottom:26px; text-align:left; }
+  .review { background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:22px; }
+  .review .stars { color:#f97316; letter-spacing:2px; }
+  .review .who { margin-top:10px; font-weight:700; color:#111827; font-size:14px; }
+
+  /* Шаги */
+  .steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+  .step { text-align:center; }
+  .step .num { width:56px; height:56px; border-radius:50%; background:#111827; color:#f97316; font-size:24px; font-weight:800; display:flex; align-items:center; justify-content:center; margin:0 auto 14px; }
+
+  /* Форма */
+  form { max-width:560px; margin:40px auto 0; background:#fff; border:1px solid #e5e7eb; border-radius:16px; padding:28px; box-shadow:0 8px 24px rgba(0,0,0,.06); }
+  form h3 { text-align:center; margin-bottom:18px; color:#111827; }
+  label { display:block; font-size:14px; font-weight:600; margin:14px 0 6px; color:#374151; }
+  input, textarea { width:100%; padding:13px 14px; border:1px solid #d1d5db; border-radius:10px; font:inherit; font-size:16px; }
+  input:focus, textarea:focus { outline:none; border-color:#f97316; box-shadow:0 0 0 3px rgba(249,115,22,.2); }
+  textarea { min-height:90px; resize:vertical; }
+  form .btn { width:100%; margin:22px 0 0; text-align:center; }
+  .hint { font-size:13px; color:#6b7280; margin-top:12px; text-align:center; }
+  .err { color:#dc2626; font-size:13px; margin-top:6px; display:none; }
+
+  /* Контакты */
+  .contact { background:#111827; color:#fff; max-width:none; }
+  .contact .inner { max-width:1100px; margin:0 auto; }
+  .contact h2 { color:#fff; }
+  .contact .box { display:flex; flex-wrap:wrap; gap:24px; justify-content:center; font-size:18px; }
+  .contact .box div { background:#1f2937; padding:18px 26px; border-radius:12px; }
+  .contact a { color:#f97316; text-decoration:none; }
+  .map { margin-top:34px; border-radius:14px; overflow:hidden; border:0; }
+  .map iframe { width:100%; height:380px; border:0; display:block; }
+  .map-links { text-align:center; margin-top:16px; }
+  .map-links a { display:inline-block; margin:6px 10px; font-weight:600; }
+
+  footer { background:#0b1120; color:#9ca3af; text-align:center; padding:22px; font-size:14px; }
+  footer a { color:#f97316; text-decoration:none; }
+
+  /* Плавающая кнопка WhatsApp на телефоне */
+  .wa-float { position:fixed; right:16px; bottom:16px; z-index:20; width:58px; height:58px; border-radius:50%; background:#25d366; color:#fff; display:flex; align-items:center; justify-content:center; font-size:30px; text-decoration:none; box-shadow:0 6px 18px rgba(0,0,0,.3); }
+
+  @media(max-width:640px){ .hero h1{font-size:27px} nav{display:none} h2{font-size:25px} }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">АВТОСЕРВИС «ИСКРА»<span>г. Кокшетау</span></div>
+  <nav>
+    <a href="#uslugi">Услуги</a>
+    <a href="#why">Почему мы</a>
+    <a href="#otzyvy">Отзывы</a>
+    <a href="#zapis">Запись</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="tag">ВАШ АВТОМОБИЛЬ В НАДЁЖНЫХ РУКАХ</div>
+  <h1>Ремонт и обслуживание авто в Кокшетау</h1>
+  <p>Диагностика, ремонт ходовой, замена масла, тормозов и электрика. Честные цены, гарантия на работы, запись в день обращения.</p>
+  <a class="btn" href="tel:+77051137141">📞 +7 (705) 113-71-41</a>
+  <a class="btn ghost" href="https://wa.me/77051137141">Написать в WhatsApp</a>
+  <a class="btn ghost" href="#zapis">Оставить заявку</a>
+</div>
+
+<section id="uslugi">
+  <h2>Наши услуги</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🔧</div><h3>Диагностика</h3><p>Компьютерная и полная диагностика всех систем автомобиля</p><div class="price">от 3 000 ₸</div></div>
+    <div class="card"><div class="icon">🛞</div><h3>Ремонт ходовой</h3><p>Шаровые, стойки, рычаги, сайлентблоки — быстро и с гарантией</p><div class="price">от 5 000 ₸</div></div>
+    <div class="card"><div class="icon">🛢️</div><h3>Замена масла</h3><p>Масло ДВС и КПП, фильтры — с любыми запчастями</p><div class="price">от 4 000 ₸</div></div>
+    <div class="card"><div class="icon">🚗</div><h3>Тормозная система</h3><p>Колодки, диски, тормозная жидкость, прокачка</p><div class="price">от 6 000 ₸</div></div>
+    <div class="card"><div class="icon">⚡</div><h3>Электрика</h3><p>АКБ, генератор, стартер, проводка, подключение сигнализаций</p><div class="price">от 3 000 ₸</div></div>
+    <div class="card"><div class="icon">❄️</div><h3>Кондиционер</h3><p>Заправка, чистка и ремонт системы кондиционирования</p><div class="price">от 8 000 ₸</div></div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="inner">
+    <h2>Почему выбирают «Искру»</h2>
+    <ul>
+      <!-- TODO: уточнить у владельца реальные сроки гарантии и впишите их ниже -->
+      <li><b>✅ Гарантия на работы</b><br>Гарантия на ремонт — срок называем в смете и записываем в гарантийный талон</li>
+      <li><b>✅ Честные цены</b><br>Смета согласуется до начала работ — без скрытых доплат</li>
+      <li><b>✅ Запчасти в наличии</b><br>Сотрудничаем с поставщиками, ждать неделями не придётся</li>
+      <li><b>✅ Быстрое обслуживание</b><br>Большинство работ выполняем в день обращения</li>
+      <!-- TODO: добавить реальный опыт, например «Мастера с опытом от 10 лет» -->
+      <li><b>✅ Опытные мастера</b><br>Ремонтируем автомобили всех марок и годов</li>
+      <li><b>✅ Удобная запись</b><br>По телефону, WhatsApp или через форму на сайте — без очередей</li>
+    </ul>
+  </div>
+</section>
+
+<section class="reviews" id="otzyvy">
+  <div class="inner">
+    <h2>Отзывы клиентов</h2>
+    <p>Читайте, что пишут наши клиенты, и оставляйте свой отзыв — нам важно ваше мнение.</p>
+
+    <!-- Сюда вставляйте ТОЛЬКО реальные отзывы с разрешения клиентов (скопируйте из 2ГИС/Google/WhatsApp). Шаблон:
+    <div class="reviews-list">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>Текст отзыва…</p>
+        <div class="who">Имя, марка авто</div>
+      </div>
+    </div>
+    -->
+
+    <!-- Ссылки ведут на поиск по названию. Когда у сервиса появится карточка — замените на прямые ссылки на отзывы. -->
+    <a class="btn dark" href="https://2gis.kz/kokshetau/search/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%20%D0%98%D1%81%D0%BA%D1%80%D0%B0" target="_blank" rel="noopener">Отзывы в 2ГИС</a>
+    <a class="btn dark" href="https://www.google.com/maps/search/?api=1&query=%D0%90%D0%B2%D1%82%D0%BE%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%20%D0%98%D1%81%D0%BA%D1%80%D0%B0%20%D0%9A%D0%BE%D0%BA%D1%88%D0%B5%D1%82%D0%B0%D1%83%20%D0%90%D0%BA%D0%B0%D0%BD%20%D0%A1%D0%B5%D1%80%D1%8B%20206" target="_blank" rel="noopener">Отзывы в Google</a>
+  </div>
+</section>
+
+<section id="zapis">
+  <h2>Как записаться</h2>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><b>Позвоните или напишите</b><br><br>Расскажите, что случилось с авто</div>
+    <div class="step"><div class="num">2</div><b>Согласуем время</b><br><br>Подберём удобный для вас слот</div>
+    <div class="step"><div class="num">3</div><b>Диагностика и смета</b><br><br>Назовём точную стоимость до работ</div>
+    <div class="step"><div class="num">4</div><b>Ремонт и гарантия</b><br><br>Забирайте авто с гарантийным талоном</div>
+  </div>
+
+  <form id="leadForm" novalidate>
+    <h3>Оставить заявку</h3>
+    <label for="f-name">Ваше имя</label>
+    <input id="f-name" name="name" type="text" placeholder="Например, Ермек" autocomplete="name">
+
+    <label for="f-phone">Телефон *</label>
+    <input id="f-phone" name="phone" type="tel" placeholder="+7 7__ ___ __ __" autocomplete="tel" required>
+    <div class="err" id="f-err">Укажите телефон, чтобы мы могли связаться с вами</div>
+
+    <label for="f-car">Марка и год авто</label>
+    <input id="f-car" name="car" type="text" placeholder="Например, Toyota Camry 2012">
+
+    <label for="f-msg">Что случилось?</label>
+    <textarea id="f-msg" name="msg" placeholder="Стук в подвеске, горит чек, нужна замена масла…"></textarea>
+
+    <button class="btn" type="submit">Отправить заявку в WhatsApp</button>
+    <div class="hint">Откроется WhatsApp с готовым сообщением — останется нажать «Отправить». Или просто позвоните: <a href="tel:+77051137141">+7 (705) 113-71-41</a></div>
+  </form>
+</section>
+
+<section class="contact" id="contact">
+  <div class="inner">
+    <h2>Контакты</h2>
+    <div class="box">
+      <div>📍 г. Кокшетау, ул. Акан Серы, 206</div>
+      <div>📞 <a href="tel:+77051137141">+7 (705) 113-71-41</a></div>
+      <div>💬 <a href="https://wa.me/77051137141">WhatsApp</a></div>
+      <!-- TODO: замените ссылку на настоящий аккаунт автосервиса -->
+      <div>📸 <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></div>
+      <div>🕒 Пн–Сб: 09:00 – 19:00</div>
+    </div>
+
+    <div class="map">
+      <iframe title="Карта: Автосервис «Искра», Кокшетау, ул. Акан Серы, 206"
+        src="https://www.google.com/maps?q=%D0%9A%D0%BE%D0%BA%D1%88%D0%B5%D1%82%D0%B0%D1%83%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%90%D0%BA%D0%B0%D0%BD%20%D0%A1%D0%B5%D1%80%D1%8B%2C%20206&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+    <div class="map-links">
+      <a href="https://2gis.kz/kokshetau/search/%D0%90%D0%BA%D0%B0%D0%BD%20%D0%A1%D0%B5%D1%80%D1%8B%20206" target="_blank" rel="noopener">Открыть в 2ГИС</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=%D0%9A%D0%BE%D0%BA%D1%88%D0%B5%D1%82%D0%B0%D1%83%20%D0%90%D0%BA%D0%B0%D0%BD%20%D0%A1%D0%B5%D1%80%D1%8B%20206" target="_blank" rel="noopener">Открыть в Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Автосервис «Искра» • Кокшетау<br>Все цены окончательно уточняются при диагностике</footer>
+
+<a class="wa-float" href="https://wa.me/77051137141" aria-label="Написать в WhatsApp">💬</a>
+
+<script>
+  document.getElementById('leadForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target;
+    var phone = f.phone.value.trim();
+    var err = document.getElementById('f-err');
+    if (phone.replace(/\D/g, '').length < 10) { err.style.display = 'block'; f.phone.focus(); return; }
+    err.style.display = 'none';
+    var lines = ['Здравствуйте! Заявка с сайта «Искра».'];
+    if (f.name.value.trim()) lines.push('Имя: ' + f.name.value.trim());
+    lines.push('Телефон: ' + phone);
+    if (f.car.value.trim()) lines.push('Авто: ' + f.car.value.trim());
+    if (f.msg.value.trim()) lines.push('Проблема: ' + f.msg.value.trim());
+    window.open('https://wa.me/77051137141?text=' + encodeURIComponent(lines.join('\n')), '_blank');
+  });
+</script>
+</body>
+</html>
